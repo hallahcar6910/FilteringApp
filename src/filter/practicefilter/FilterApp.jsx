@@ -10,9 +10,9 @@ export default function FilterApp() {
  
   const searching = (data) => {
     return data.filter((item) =>
-     item.name.toLocaleLowerCase().includes(sea)||  
-      item.email.toLocaleLowerCase().includes(sea) ||  
-       item.body.toLocaleLowerCase().includes(sea)
+     item.name.toLowerCase().includes(sea)||  
+      item.email.toLowerCase().includes(sea) ||  
+       item.body.toLowerCase().includes(sea)
      
      )
     
