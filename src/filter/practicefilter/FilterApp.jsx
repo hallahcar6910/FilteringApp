@@ -7,15 +7,14 @@ export default function FilterApp() {
   const handleChange = (e) => {
     setSea(e.target.value);
   };
- 
+
   const searching = (data) => {
-    return data.filter((item) =>
-     item.name.toLocaleLowerCase().includes(sea)||  
-      item.email.toLocaleLowerCase().includes(sea) ||  
-       item.body.toLocaleLowerCase().includes(sea)
-     
-     )
-    
+    return data.filter(
+      (item) =>
+        item.name.toLocaleLowerCase().includes(sea) ||
+        item.email.toLocaleLowerCase().includes(sea) ||
+        item.body.toLocaleLowerCase().includes(sea)
+    );
   };
 
   //  const  search={filter.((item)=>
@@ -24,9 +23,12 @@ export default function FilterApp() {
   //   )}
   return (
     <div className=" container  ">
-      <p className="text-success h1"> Search Filter Application for election  names</p>
+      <p className="text-success h1">
+        {" "}
+        Search Filter Application for election names
+      </p>
 
-      <form >
+      <form>
         <span>
           {" "}
           <input
