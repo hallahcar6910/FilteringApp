@@ -23,9 +23,7 @@ export default function FilterApp() {
   //   )}
   return (
     <div className=" container  ">
-      <p className="text-success h1">
-        {" "}
-        Searching  Application </p>
+      <p className="text-success h1"> Searching Apps</p>
 
       <form>
         <span>
