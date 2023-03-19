@@ -7,15 +7,14 @@ export default function FilterApp() {
   const handleChange = (e) => {
     setSea(e.target.value);
   };
- 
+
   const searching = (data) => {
-    return data.filter((item) =>
-     item.name.toLocaleLowerCase().includes(sea)||  
-      item.email.toLocaleLowerCase().includes(sea) ||  
-       item.body.toLocaleLowerCase().includes(sea)
-     
-     )
-    
+    return data.filter(
+      (item) =>
+        item.name.toLowerCase().includes(sea.toLowerCase()) ||
+        item.email.toLowerCase().includes(sea.toLowerCase()) ||
+        item.body.toLowerCase().includes(sea.toLowerCase())
+    );
   };
 
   //  const  search={filter.((item)=>
@@ -24,9 +23,9 @@ export default function FilterApp() {
   //   )}
   return (
     <div className=" container  ">
-      <p className="text-success h1"> Search Filter Application</p>
+      <p className="text-success h1"> Search Filter Application and sorting out names</p>
 
-      <form >
+      <form>
         <span>
           {" "}
           <input
