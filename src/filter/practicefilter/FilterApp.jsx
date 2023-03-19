@@ -25,8 +25,7 @@ export default function FilterApp() {
     <div className=" container  ">
       <p className="text-success h1">
         {" "}
-        Search Filter Application for election names (for main)
-       mainly for developer</p>
+        Searching  Application </p>
 
       <form>
         <span>
