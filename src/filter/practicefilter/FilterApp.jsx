@@ -23,7 +23,7 @@ export default function FilterApp() {
   //   )}
   return (
     <div className=" container  ">
-      <p className="text-success h1"> Search Filter Application and sorting out names</p>
+      <p className="text-success h1"> Search Filter Application and sorting out names mainly for developer</p>
 
       <form>
         <span>
