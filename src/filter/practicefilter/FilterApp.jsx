@@ -9,22 +9,12 @@ export default function FilterApp() {
   };
 
   const searching = (data) => {
-<<<<<<< HEAD
     return data.filter(
       (item) =>
         item.name.toLocaleLowerCase().includes(sea) ||
         item.email.toLocaleLowerCase().includes(sea) ||
         item.body.toLocaleLowerCase().includes(sea)
     );
-=======
-    return data.filter((item) =>
-     item.name.toLowerCase().includes(sea.toLowerCase())||  
-      item.email.toLowerCase().includes(sea.toLowerCase()) ||  
-       item.body.toLowerCase().includes(sea.toLowerCase())
-     
-     )
-    
->>>>>>> d4e13fcf77873b1ec8f7a09e08ce128ce79b613e
   };
 
   //  const  search={filter.((item)=>
